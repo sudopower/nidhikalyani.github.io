@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nidhi Kalyani - Data Privacy & AI Governance Professional</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+        .header-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./assets/nk_header.png') center/cover no-repeat;
+            background-size: cover;
+            color: white;
+            padding: 8rem 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .section-heading {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Centered content */
+            margin-bottom: 3rem; /* Increased spacing below the heading */
+        }
+        .section-heading i {
+            margin-right: 0.75rem;
+            color: #e3aa00; /* Updated to black accent */
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.1);
+        }
+        .card-header-icon {
+            margin-right: 0.5rem;
+            color: #f9d400; /* Updated to black accent */
+        }
+        .linkedin-post-card {
+            background-color: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-top: 5px solid #000000; /* Updated to black accent */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease-in-out;
+            min-height: 420px;
+        }
+        .linkedin-post-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.12);
+            background-color: #f8fafc;
+        }
+        .linkedin-post-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .linkedin-icon {
+            color: #0077B5; /* Keeping LinkedIn icon blue for brand consistency */
+            width: 28px;
+            height: 28px;
+        }
+        .accent-color {
+            color: #000000; /* Updated to black accent */
+        }
+        .bg-accent {
+            background-color: #000000; /* Updated to black accent */
+        }
+        .btn-primary {
+            background-color: #e3aa00; /* Updated to black accent */
+            color: rgb(255, 255, 255);
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #ffc515; /* Darker shade for hover */
+        }
+
+        /* Navigation Specific Styles */
+        .nav-link {
+            position: relative;
+            padding: 0.5rem 1rem; /* Adjust padding for better spacing */
+            transition: color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+        }
+        .nav-link:hover {
+            color: #000000; /* Updated to black accent on hover */
+            transform: translateY(-2px); /* Subtle lift effect */
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background-color: #e3aa00; /* Updated to black accent for underline */
+            transition: width 0.3s ease, left 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+            left: 0;
+        }
+
+        /* Mobile menu slide-in animation */
+        .mobile-menu {
+            transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+            overflow: hidden;
+            max-height: 0;
+            opacity: 0;
+        }
+        .mobile-menu.active {
+            max-height: 500px; /* Adjust as needed based on content */
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header/Hero Section -->
+    <header class="header-bg text-center">
+        <div class="container mx-auto px-4">
+            <h1 class="text-5xl font-bold mb-4">Nidhi Kalyani</h1>
+            <p class="text-xl font-light mb-8 max-w-2xl mx-auto">
+                Motivated legal associate transitioning into Data Privacy and Compliance,
+                passionate about building privacy-first environments that align with global standards.
+            </p>
+            <a href="#contact" class="btn-primary inline-block">Connect with Me</a>
+        </div>
+    </header>
+
+    <nav class="bg-white shadow-md py-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center px-4 md:px-8">
+            <!-- Brand/Logo (can be replaced with Nidhi's name or a small logo) -->
+            <a href="#" class="text-xl font-bold accent-color">Nidhi Kalyani</a>
+
+            <!-- Hamburger menu button for mobile -->
+            <button id="mobile-menu-button" class="md:hidden p-2 text-gray-700 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+
+            <!-- Desktop Navigation -->
+            <div id="desktop-nav" class="hidden md:flex space-x-4 lg:space-x-8">
+                <a href="#about" class="nav-link text-gray-700 font-medium">About</a>
+                <a href="#skills" class="nav-link text-gray-700 font-medium">Skills & Certifications</a>
+                <a href="#experience" class="nav-link text-gray-700 font-medium">Experience</a>
+                <a href="#education" class="nav-link text-gray-700 font-medium">Education</a>
+                <a href="#privacy-projects" class="nav-link text-gray-700 font-medium">Privacy & Projects</a>
+                <a href="#linkedin-posts" class="nav-link text-gray-700 font-medium">LinkedIn Posts</a>
+                <a href="#contact" class="nav-link text-gray-700 font-medium">Contact</a>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu (hidden by default) -->
+        <div id="mobile-menu" class="mobile-menu md:hidden bg-white shadow-lg py-2 mt-2">
+            <a href="#about" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 font-medium">About</a>
+            <a href="#skills" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 font-medium">Skills & Certifications</a>
+            <a href="#experience" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 font-medium">Experience</a>
+            <a href="#education" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 font-medium">Education</a>
+            <a href="#privacy-projects" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 font-medium">Privacy & Projects</a>
+            <a href="#linkedin-posts" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 font-medium">LinkedIn Posts</a>
+            <a href="#contact" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 font-medium">Contact</a>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-16 max-w-screen-lg"> <!-- Increased overall padding for main content and added max-width -->
+        <!-- About Section -->
+        <section id="about" class="mb-16"> <!-- Increased spacing -->
+            <h2 class="text-4xl font-semibold section-heading">
+                <i class="fas fa-user-circle"></i> About Me
+            </h2>
+            <div class="card">
+                <p class="text-lg leading-relaxed">
+                    Nidhi Kalyani is an aspiring CIPP/E & AIGP certified professional and a dedicated Data Privacy & Tech Law Enthusiast.
+                    With over two years of experience as a Legal Associate at INDIALAW LLP, Nidhi has a strong background in
+                    both litigation and non-litigation matters, including drafting and reviewing Privacy Policies, Data Processing Agreements (DPAs),
+                    Software License Agreements, and SaaS Agreements.
+                </p>
+                <p class="text-lg leading-relaxed mt-4">
+                    Successfully completed CIPP/E training and Hands-on training on DPO from World Cyber Security Forum (WCSF)
+                    and certified in PrivacyOps by Securiti.ai, equipping her with hands-on knowledge of GDPR, data subject rights,
+                    DPO roles, DPIAs, and Privacy by Design. Nidhi is passionate about combining her legal background with emerging global
+                    data privacy standards and looks forward to contributing effectively in international roles,
+                    with a focus on AI governance and cyber law.
+                </p>
+            </div>
+        </section>
+
+        <!-- Skills & Certifications Section -->
+        <section id="skills" class="mb-16"> <!-- Increased spacing -->
+            <h2 class="text-4xl font-semibold section-heading">
+                <i class="fas fa-award"></i> Skills & Certifications
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-2 accent-color">
+                        <i class="fas fa-tools card-header-icon"></i> Top Skills
+                    </h3>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Cybersecurity</li>
+                        <li>Cyberlaw</li>
+                        <li>Artificial Intelligence (AI)</li>
+                        <li>Contract Review</li>
+                        <li>Legal Research</li>
+                        <li>Drafting & Compliance</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-2 accent-color">
+                        <i class="fas fa-certificate card-header-icon"></i> Certifications
+                    </h3>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>CIPP/E Training Completed - WCSF, 2025</li>
+                        <li>Hands-on DPO Training - WCSF, 2025</li>
+                        <li>Privacy Ops Certification - Securiti.ai, 2025</li>
+                        <li>OneTrust Tools - Tech Risk & Compliance, Privacy Automation Track, 2025</li>
+                        <li>Tech Risk & Compliance Foundations</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-2 accent-color">
+                        <i class="fas fa-book-open card-header-icon"></i> Key Training & Courses
+                    </h3>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Drafting & Negotiating Commercial Contracts - FutureLearn</li>
+                        <li>Mergers & Acquisitions - Alison</li>
+                        <li>Insolvency and Bankruptcy Code - E-Justice India</li>
+                        <li>Intellectual Property Rights - JALR</li>
+                        <li>Criminal Drafting - IJALR</li>
+                        <li>Alternative Dispute Resolution - E-Justice India</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Employment History Section -->
+        <section id="experience" class="mb-16"> <!-- Increased spacing -->
+            <h2 class="text-4xl font-semibold section-heading">
+                <i class="fas fa-briefcase"></i> Employment History
+            </h2>
+            <div class="grid gap-6">
+                <div class="card">
+                    <h3 class="text-2xl font-bold accent-color">
+                        <i class="fas fa-gavel card-header-icon"></i> Legal Associate
+                    </h3>
+                    <p class="text-lg font-semibold text-gray-700">INDIALAW LLP, Bengaluru</p>
+                    <p class="text-md text-gray-600 mb-4">October 2021 - January 2024 (2 years 4 months)</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1">
+                        <li>Drafted, reviewed, and redlined IT agreements like SaaS, Software licensing agreement.</li>
+                        <li>Integrated & researched on GDPR compliant clauses in service agreements and vendor contracts.</li>
+                        <li>Reviewed, redlined & negotiated IT contracts and commercial agreements for corporate clients.</li>
+                        <li>Conducted legal audits and risk reviews for clients such as Banks & Financial institutions.</li>
+                        <li>Advised and engaged in IBC, arbitration, civil litigation, and enforcement of foreign arbitral awards.</li>
+                        <li>Advised on RERA compliance, labor law matters, and intellectual property disputes.</li>
+                        <li>Handled various civil disputes (specific relief, contract act, RERA, arbitration, insolvency, industrial disputes).</li>
+                        <li>Drafted plaints, written statements, applications, objections, affidavits, legal notices.</li>
+                        <li>Briefed, coordinated, and engaged senior counsels in high-stake matters.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 class="text-2xl font-bold accent-color">
+                        <i class="fas fa-globe card-header-icon"></i> Member - Data Privacy & Cyber Law Contributor
+                    </h3>
+                    <p class="text-lg font-semibold text-gray-700">World Cyber Security Forum (WCSF), Remote</p>
+                    <p class="text-md text-gray-600 mb-4">May 2025 - Present (2 months)</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1">
+                        <li>Actively contributing as a member of WCSF, a global platform focused on cyber law, data protection, and responsible AI governance.</li>
+                        <li>Participated in webinars and workshops on Cyber law, DPDPA, GDPR, cross-border data flows, and AI law.</li>
+                        <li>Contributing to community-led research and knowledge-sharing in privacy & cybersecurity.</li>
+                        <li>Engaged with policy discussions aligned with the GDPR, DPDP Act, Cybercrimes, digital world, cyberlaw and NIS2 Directive.</li>
+                    </ul>
+                </div>
+                 <div class="card">
+                    <h3 class="text-2xl font-bold accent-color">
+                        <i class="fas fa-file-alt card-header-icon"></i> Paralegal
+                    </h3>
+                    <p class="text-lg font-semibold text-gray-700">India Law LLP, Bengaluru</p>
+                    <p class="text-md text-gray-600 mb-4">October 2021 - January 2022</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1">
+                        <li>Researched commercial, IBC, Civil law linked disputes.</li>
+                        <li>Drafted affidavits, petitions, and court-related documents.</li>
+                        <li>Supported court appearances and legal compliance.</li>
+                    </ul>
+                </div>
+                <!-- Additional Internships from both PDFs -->
+                <div class="card">
+                    <h3 class="text-2xl font-bold accent-color">
+                        <i class="fas fa-laptop-code card-header-icon"></i> Legal Intern
+                    </h3>
+                    <p class="text-lg font-semibold text-gray-700">Associated Lawyers Advocate Office, Ernakulam</p>
+                    <p class="text-md text-gray-600 mb-4">November 2020 - December 2020 (2 months)</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1">
+                        <li>Researched commercial law linked disputes, IT laws, IPR and Cyber law.</li>
+                        <li>Drafted affidavits, petitions, and court-related documents.</li>
+                        <li>Supported court appearances and legal compliance.</li>
+                        <li>Assisted with client interviews and took meticulous notes.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 class="text-2xl font-bold accent-color">
+                        <i class="fas fa-university card-header-icon"></i> Law Student Intern
+                    </h3>
+                    <p class="text-lg font-semibold text-gray-700">S & S Associates Office, Civil and Criminal Court Complex, Kannur</p>
+                    <p class="text-md text-gray-600 mb-4">April 2019 - May 2019 (2 months)</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1">
+                        <li>Attended webinars and training on Cyber Laws and IT act.</li>
+                        <li>Conferred with clients and other involved parties to gather and track case information.</li>
+                        <li>Reviewed legal information and proofed documentation for errors.</li>
+                        <li>Managed day-to-day legal activities suchs subpoena services.</li>
+                    </ul>
+                </div>
+                 <div class="card">
+                    <h3 class="text-2xl font-bold accent-color">
+                        <i class="fas fa-handshake card-header-icon"></i> Law Student Intern
+                    </h3>
+                    <p class="text-lg font-semibold text-gray-700">Taluk Legal Sevices Committee, District Legal Services Authority, Cannanore</p>
+                    <p class="text-md text-gray-600 mb-4">April 2017 - May 2017 (2 months)</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1">
+                        <li>Conducted research on Cyber Crimes and Mediation and Arbitration methodologies.</li>
+                        <li>Volunteered in mobile lok adalat campaigns for weakened sections of society.</li>
+                        <li>Took part in legal literacy classes and conducted seminars on legal awareness (labour laws, women empowerment, cyber crimes, cyber bullying).</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="mb-16"> <!-- Increased spacing -->
+            <h2 class="text-4xl font-semibold section-heading">
+                <i class="fas fa-graduation-cap"></i> Education
+            </h2>
+            <div class="grid gap-6 md:grid-cols-2">
+                <div class="card">
+                    <h3 class="text-2xl font-bold accent-color">
+                        <i class="fas fa-school card-header-icon"></i> BBA LLB (Hons.)
+                    </h3>
+                    <p class="text-lg font-semibold text-gray-700">Mahatma Gandhi University, Kerala</p>
+                    <p class="text-md text-gray-600">2015 - December 2020</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-2xl font-bold accent-color">
+                        <i class="fas fa-gavel card-header-icon"></i> All India Bar Examination (AIBE)
+                    </h3>
+                    <p class="text-lg font-semibold text-gray-700">Certified</p>
+                    <p class="text-md text-gray-600">July 2021</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Privacy Engagements & Projects Section -->
+        <section id="privacy-projects" class="mb-16"> <!-- Increased spacing -->
+            <h2 class="text-4xl font-semibold section-heading">
+                <i class="fas fa-shield-alt"></i> Privacy Engagements & Projects
+            </h2>
+            <div class="card mb-6">
+                <ul class="list-disc list-inside text-gray-700 space-y-2">
+                    <li>Completed DPO roleplay training with WCSF covering DPIAs, ROPA, Data Subject Request handling, and incident response.</li>
+                    <li>Shared thought-leadership posts on GDPR, AI Governance, and Indian DPDPA.</li>
+                    <li>Participated in workshops and webinars on global privacy laws and compliance.</li>
+                    <li>Successfully completed CIPP/E training and Hands-on training on DPO from World Cyber Security Forum (WCSF).</li>
+                    <li>Certified in PrivacyOps by Securiti.ai, equipping with hands-on knowledge of GDPR, data subject rights, DPO roles, DPIAs, and Privacy by Design.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- LinkedIn Posts Section -->
+        <section id="linkedin-posts" class="mb-16"> <!-- Increased spacing -->
+            <h2 class="text-4xl font-semibold section-heading">
+                <i class="fab fa-linkedin"></i> LinkedIn Posts
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- LinkedIn Post 1 -->
+                <a href="https://www.linkedin.com/posts/nidhi-kalyani-ba628a174_im-happy-to-share-that-im-starting-a-new-activity-7339325544615858177-0syT" target="_blank" class="linkedin-post-card">
+                    <img src="https://media.licdn.com/media/AAYQAQQSAAgAAQAAAAAAABqdcB5EZ18gQPCF4HzBOFBBhw.gif" onerror="this.onerror=null;this.src='https://placehold.co/400x200/cccccc/000000?text=Data Privacy and Cyber Law Contributor at WCSF';" alt="LinkedIn Post Preview - Data Privacy" class="rounded-md">
+                    <div class="flex items-center mb-2">
+                        
+                        <h3 class="text-xl font-semibold accent-color">Data Privacy & Cyber Law Contributor at WCSF</h3>
+                    </div>
+                    <p class="text-gray-700 text-sm leading-relaxed">
+                        I’m happy to share that I’m starting a new position as Member – Data Privacy & Cyber Law Contributor at World Cyber Security Forum (WCSF)!
+                    </p>
+                </a>
+
+                <!-- LinkedIn Pulse Article -->
+                <a href="https://www.linkedin.com/posts/nidhi-kalyani-ba628a174_wcsf-itagreements-itlaw-activity-7328640156482068481-fl7x" target="_blank" class="linkedin-post-card">
+                    <img src="https://media.licdn.com/dms/image/v2/D5622AQHudPBG3GfmXQ/feedshare-shrink_800/B56ZbSPYAIGsAg-/0/1747283970781?e=1753920000&v=beta&t=_CLr0Xj9EBR7vhOMd5l4zjhfIgHxq0uPVObYATQqzmA" onerror="this.onerror=null;this.src='https://placehold.co/400x200/cccccc/000000?text=Live Executive Training on IT Agreements (Data Privacy) by WCSF';" alt="LinkedIn Article Preview - DPIA" class="rounded-md">
+                    <div class="flex items-center mb-2">                        
+                        <h3 class="text-xl font-semibold accent-color">Live Executive Training on IT Agreements (Data Privacy) by WCSF</h3>
+                    </div>
+                    <p class="text-gray-700 text-sm leading-relaxed">
+                        I am Hereby, Happy to get certified in Live Executive Training on IT Agreements (Data Privacy) by World Cyber Security Forum (WCSF)
+                    </p>
+                </a>
+
+                <!-- New LinkedIn Post 1 (Navigating Cross-Border Data Flows) -->
+                <a href="https://medium.com/@kalyaninidhi94/top-10-dpia-must-dos-for-biometric-surveillance-under-gdpr-716d68e70e91" target="_blank" class="linkedin-post-card">
+                    <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*9Uakd1Kb8kB7dAiJ0geIBg.jpeg" onerror="this.onerror=null;this.src='https://placehold.co/400x200/cccccc/000000?text=Post+on+Data+Transfer+Error';" alt="LinkedIn Post Preview - Data Transfer" class="rounded-md">
+                    <div class="flex items-center mb-2">                        
+                        <h3 class="text-xl font-semibold accent-color">TOP 10 DPIA MUST-DO’S FOR BIOMETRIC SURVEILLANCE UNDER GDPR.</h3>
+                    </div>
+                    <p class="text-gray-700 text-sm leading-relaxed">
+                        Good Evening To All,
+</br>
+I am excited to share my blog post in Medium.com. 
+                    </br>
+In this blog post, I explained about the importance of DPIA for Biometric Surveillance Under GDPR. 
+                    </p>
+                </a>
+
+                <!-- New LinkedIn Post 4 (Cybersecurity as a Foundation for Data Privacy) -->
+                <a href="https://www.linkedin.com/posts/nidhi-kalyani-ba628a174_irelands-dpc-finalizes-tiktok-decision-with-activity-7324117679768772608-YkIi?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAghfogBd-qocfX3Lzgd7ldDCJ9rkSOs7Sw" target="_blank" class="linkedin-post-card">
+                    <img src="https://images.contentstack.io/v3/assets/bltd4dd5b2d705252bc/blte5e6615bbc45462b/6814ce7a473f11a29eaca8a8/data-transfers-globe-datatransfer-050225.jpg" onerror="this.onerror=null;this.src='https://placehold.co/400x200/cccccc/000000?text=Post+on+Cybersecurity+Error';" alt="LinkedIn Post Preview - Cybersecurity" class="rounded-md">
+                    <div class="flex items-center mb-2">                    
+                        <h3 class="text-xl font-semibold accent-color">Ireland's DPC finalizes TikTok decision with potential data transfer ban</h3>
+                    </div>
+                    <p class="text-gray-700 text-sm leading-relaxed">
+                        ATTENTION PRIVACY PROFESSIONALS!!
+<br>
+A NEW UPDATE FROM IAPP! 🔍 
+<br>
+A landmark final decision from Ireland's Data Protection Commission may bring a halt to EU data transfers by TikTok to China. 
+<br>
+Read more about this here:
+                    </p>
+                </a>
+
+                <!-- New LinkedIn Post 5 (The Growing Importance of AI Ethics in Governance) -->
+                <a href="https://medium.com/@kalyaninidhi94/why-privacy-by-design-default-matters-more-than-ever-under-gdpr-583fc756af53" target="_blank" class="linkedin-post-card">
+                    <img src="https://slabstatic.com/prod/uploads/7cd8fe75/posts/images/ZYioF99U6Y4PLiKXk0-NyhS9.png" onerror="this.onerror=null;this.src='https://placehold.co/400x200/cccccc/000000?text=Post+on+AI+Ethics+Error';" alt="LinkedIn Post Preview - AI Ethics" class="rounded-md">
+                    <div class="flex items-center mb-2">                        
+                        <h3 class="text-xl font-semibold accent-color">Why “Privacy by Design & Default” Matters More Than Ever Under GDPR</h3>
+                    </div>
+                    <p class="text-gray-700 text-sm leading-relaxed">          
+This is my first Medium.com article on topic - Privacy by Default and Privacy By Design under GDPR. 
+</br></br>
+In this article, I break down two of the most critical principles in global data privacy law—what they mean, why they matter, and how businesses can implement them effectively.
+                    </p>
+                </a>
+
+                <a href="https://www.linkedin.com/posts/nidhi-kalyani-ba628a174_dataprivacy-onetrust-thirdpartymanagement-activity-7323662970654228480-_e0a?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAghfogBd-qocfX3Lzgd7ldDCJ9rkSOs7Sw" target="_blank" class="linkedin-post-card">
+                    <img src="https://media.licdn.com/dms/image/v2/D5622AQG5_4bdkANyFw/feedshare-shrink_800/B56ZaLgp6jHUAk-/0/1746097317319?e=1753920000&v=beta&t=_hJ6nxMvyGCEzqFyZBA9ellkwNyqYCTgUWJe3kUahk4" onerror="this.onerror=null;this.src='https://placehold.co/400x200/cccccc/000000?text=Post+on+AI+Ethics+Error';" alt="LinkedIn Post Preview - AI Ethics" class="rounded-md">
+                    <div class="flex items-center mb-2">                        
+                        <h3 class="text-xl font-semibold accent-color">THIRD-PARTY MANAGEMENT: SOLUTION FOUNDATIONS certification by OneTrust</h3>
+                    </div>
+                    <p class="text-gray-700 text-sm leading-relaxed">          
+Thrilled to share that I’ve successfully completed the THIRD-PARTY MANAGEMENT: SOLUTION FOUNDATIONS certification by OneTrust!
+<br>
+This course gave me a strong foundation in managing third-party privacy risks and deepened my understanding of key principles in vendor governance and data protection.
+                    </p>
+                </a>
+
+            </div>
+            <p class="text-center text-gray-600 mt-8">
+                For more thought-leadership content, visit my LinkedIn profile <a href="https://www.linkedin.com/in/nidhi-kalyani-ba628a174" target="_blank" class="text-blue-600 hover:underline">LinkedIn Profile</a>.
+            </p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="mb-16 text-center"> <!-- Increased spacing -->
+            <h2 class="text-4xl font-semibold section-heading">
+                <i class="fas fa-envelope"></i> Contact Me
+            </h2>
+            <div class="card max-w-xl mx-auto py-8">
+                <p class="text-lg mb-4">
+                    Feel free to reach out for collaborations, inquiries, or just to connect!
+                </p>
+                <div class="space-y-3">
+                    <div class="contact-item">
+                        <i class="fas fa-at"></i>
+                        <p class="text-lg"><a href="mailto:nidhikalyani46287@gmail.com" class="text-blue-600 hover:underline">nidhikalyani46287@gmail.com</a></p>
+                    </div>
+                  
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin-in"></i>
+                        <p class="text-lg"><a href="https://www.linkedin.com/in/nidhi-kalyani-ba628a174" target="_blank" class="text-blue-600 hover:underline">linkedin.com/in/nidhi-kalyani-ba628a174</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p class="text-lg">Bengaluru, India</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 text-center">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2025 Nidhi Kalyani. All rights reserved.</p>
+            <p class="mt-2">Built with <span class="text-red-500">&hearts;</span> for Data Privacy & AI Governance enthusiasts</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                // Check if it's the mobile menu and close it after clicking a link
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (mobileMenu.classList.contains('active')) {
+                    mobileMenu.classList.remove('active');
+                }
+                document.querySelector(targetId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Toggle mobile menu
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking outside (optional, but good UX)
+        document.addEventListener('click', function(event) {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const isClickInsideMenu = mobileMenu.contains(event.target);
+            const isClickOnButton = mobileMenuButton.contains(event.target);
+
+            if (mobileMenu.classList.contains('active') && !isClickInsideMenu && !isClickOnButton) {
+                mobileMenu.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
